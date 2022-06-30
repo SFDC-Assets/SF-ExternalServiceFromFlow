@@ -1,5 +1,6 @@
 {
-  "orgName": "sumanth.ghanta company",
+  "orgName": "External Services Demo",
+  "hasSampleData": "true",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
   "settings": {
