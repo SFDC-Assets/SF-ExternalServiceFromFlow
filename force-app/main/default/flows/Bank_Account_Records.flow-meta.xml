@@ -36,7 +36,7 @@
     <assignments>
         <name>Assign_Existing_Bank_Account_ID</name>
         <label>Assign Existing Bank Account ID</label>
-        <locationX>264</locationX>
+        <locationX>308</locationX>
         <locationY>518</locationY>
         <assignmentItems>
             <assignToReference>account.id</assignToReference>
@@ -46,7 +46,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_Salesforce_User_Record</targetReference>
+            <targetReference>Update_Salesforce_Contact_Record</targetReference>
         </connector>
     </assignments>
     <decisions>
@@ -93,9 +93,9 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordUpdates>
-        <name>Update_Salesforce_User_Record</name>
-        <label>Update Salesforce User Record</label>
-        <locationX>264</locationX>
+        <name>Update_Salesforce_Contact_Record</name>
+        <label>Update Salesforce Contact Record</label>
+        <locationX>308</locationX>
         <locationY>638</locationY>
         <filterLogic>and</filterLogic>
         <filters>
@@ -117,7 +117,7 @@
                 <elementReference>Bank_Account_Type</elementReference>
             </value>
         </inputAssignments>
-        <object>User</object>
+        <object>Contact</object>
     </recordUpdates>
     <screens>
         <name>Bank_Account_Record</name>
