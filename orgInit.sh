@@ -1,4 +1,4 @@
-sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix external -o services.demo
-sfdx force:source:push
-sfdx shane:user:permset:assign -l User -g User -n Contact-BankAdmin
-sfdx force:org:open -p /lightning/o/Contact/list?filterName=AllContacts
+sf demoutil org create scratch -f config/project-scratch-def.json -d 30 -s -p external -e services.demo
+sf project deploy start
+sf org assign permset -l User -g User -n Contact-BankAdmin
+sf org open -p /lightning/o/Contact/list?filterName=AllContacts
